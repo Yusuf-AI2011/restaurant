@@ -1,0 +1,147 @@
+.navbar-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.navbar {
+  width: 100%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__right {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__box-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__line {
+    width: 0px;
+    height: 45px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+  }
+
+  &__link {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+
+  &__box-number {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  &__number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+
+  &__telephone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+  }
+
+  &__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+
+  &__button {
+    width: 157px;
+    height: 47px;
+    opacity: 1;
+    background: #ff7400;
+    border: none;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+
+  &__burgers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+  }
+
+  &__burger {
+    width: 50px;
+    height: 5px;
+    border-radius: 5px;
+    border: none;
+    background-color: #FF7400;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__list {
+      display: none;
+    }
+
+    &__box-icons {
+      display: none;
+    }
+
+    &__box-number {
+      display: none;
+    }
+
+    &__button {
+      display: none;
+    }
+
+    &__burgers {
+      display: flex;
+    }
+  }
+}

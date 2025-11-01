@@ -1,0 +1,87 @@
+.celeb-wrapper {
+  width: 100%;
+  margin: auto;
+  background-image: url('/images/CELEBRATE-BACK.png');
+    background-size: cover;
+}
+
+.celeb {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px;
+
+    &__left {
+        width: 650px;
+    }
+
+    &__right {
+        display: flex;
+        justify-content: centera;
+        align-items: center;
+    }
+
+  &__title {
+    font-family: "Tinos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 60px;
+    color: #d67e34;
+  }
+
+  &__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #ffffff;
+  }
+
+  &__button {
+    width: 157px;
+    height: 47px;
+    background: #ff7400;
+    border: none;
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .celeb {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+
+        &__left {
+            width: 100%;
+        }
+
+        &__right {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &__title {
+            width: 90%;
+            text-align: center;
+        }
+
+        &__text {
+            width: 90%;
+            text-align: center;
+        }
+    }
+}

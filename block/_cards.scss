@@ -1,0 +1,60 @@
+.cards-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+
+  &__cards {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    bottom: 100px;
+  }
+
+  &__card {
+    width: 349px;
+    height: 328px;
+    opacity: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 40px 20px #0000001A;
+  }
+
+  &__title {
+    font-family: "Tinos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #2c2c2c;
+    text-align: center;
+  }
+
+  &__text {
+    font-family: "Tinos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #656363;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    .cards {
+
+        %__card {
+            width: 90%;
+        }
+    }
+}

@@ -1,0 +1,92 @@
+.meal-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.meal {
+  width: 90%;
+  margin: auto;
+  padding: 150px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__title {
+    font-family: "Tinos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000000;
+  }
+
+  &__text {
+    font-family: "Tinos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    color: #000000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  &__line {
+    width: 150px;
+    height: 0px;
+    border: 1px dashed #000000;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__span-text {
+    color: #BC9060;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .meal {
+        &__down {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        &__big-img {
+            width: 100%;
+        }
+
+        &__cards {
+            width: 90%;
+            margin: auto;
+        }
+
+
+        &__line {
+            display: none;
+        }
+    }
+}

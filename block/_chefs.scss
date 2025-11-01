@@ -1,0 +1,49 @@
+.chef-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.chef {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  padding: 50px 0px;
+
+  &__title {
+    font-family: "Tinos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000000;
+    text-align: center;
+  }
+
+  &__span {
+    color: #D67E34;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .chef {
+
+        &__cards {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 50px;
+        }
+    }
+}

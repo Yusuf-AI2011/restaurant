@@ -1,0 +1,111 @@
+.history-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.history {
+  width: 90%;
+  margin: auto;
+  padding: 100px 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+
+  &__left {
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  &__up {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    font-family: "Tinos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000000;
+  }
+
+  &__span {    width: 400px;
+    color: #bc9060;
+  }
+
+  &__text {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #656363;
+  }
+
+  &__cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+  }
+
+  &__number {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: #bc9060;
+  }
+
+  &__subtext {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .history {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        &__title {
+            width: 90%;
+            text-align: center;
+        }
+
+        &__text {
+            width: 90%;
+        }
+
+        &__cards {
+            flex-wrap: wrap;
+        }
+
+        &__img {
+            width: 90%;
+        }
+
+        &__left {
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,97 @@
+.galery-wrapper {
+  width: 100%;
+  margin: auto;
+}
+
+.galery {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0px;
+
+  &__title {
+    font-family: "Tinos";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 54px;
+    line-height: 62px;
+    color: #000000;
+  }
+
+  &__span {
+    color: #D67E34;
+  }
+
+  &__down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  &__left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  &__img-big {
+    width: 540px;
+  }
+
+  &__box {
+    width: 540px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+    .galery {
+
+        &__down {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        &__box {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        &__left {
+            width: 90%;
+        }
+
+        &__right {
+            width: 90%;
+        }
+
+        &__img {
+            width: 90%;
+            height: 240px;
+            background-position: center;
+        }
+    }
+}

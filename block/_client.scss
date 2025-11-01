@@ -1,0 +1,45 @@
+.client-wrapper {
+  width: 100%;
+  margin: auto;
+  background-color: #E5E5E5;;
+}
+
+.client {
+  width: 90%;
+  margin: auto;
+  padding: 100px 0px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  &__text {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #000000;
+  }
+
+  &__client {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+  }
+
+  &__name {
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: #000000;
+  }
+}
